@@ -8,3 +8,4 @@ edition = "2021"
 [dependencies]
 clap = "3.0.0-beta.5"
 itertools = "0.10.1"
+nom = "7"

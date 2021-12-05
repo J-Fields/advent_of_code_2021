@@ -1,12 +1,14 @@
 mod day1;
+mod day2;
 
 use std::{fs::File, io::BufReader};
 
-use self::day1::Day1;
 
 pub fn get_solution(day: usize) -> Option<Box<dyn Solution>> {
     if day == 1 {
-        Some(Box::new(Day1 {}))
+        Some(Box::new(day1::Day1 {}))
+    } else if day == 2 {
+        Some(Box::new(day2::Day2 {}))
     } else {
         None
     }
